@@ -1,0 +1,17 @@
+{
+  "name": "@den/payments",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./commissions": "./src/commissions.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check src/commissions.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

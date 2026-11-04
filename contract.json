@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://den.global/contracts/payments/1.0.0",
+  "title": "DEN payments service command envelope",
+  "type": "object",
+  "required": [
+    "contractVersion",
+    "service",
+    "payload"
+  ],
+  "properties": {
+    "contractVersion": {
+      "const": "1.0.0"
+    },
+    "service": {
+      "const": "payments"
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}
